@@ -1,8 +1,11 @@
+import { CategoriaProvider } from "./contexts/CategoriaContext";
 import { Routes } from "./routes";
 
 function App() {
   return (
-    <Routes />
+    <CategoriaProvider>
+      <Routes />
+    </CategoriaProvider>
   );
 }
 
